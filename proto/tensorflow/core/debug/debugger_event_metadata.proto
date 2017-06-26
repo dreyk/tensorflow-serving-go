@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package third_party.tensorflow.core.debug;
+
+// Encapsulates per-event data related to debugging.
+message DebuggerEventMetadata {
+  string device = 1;
+  int32 output_slot = 2;
+};
+option go_package = "github.com/dreyk/tensorflow-serving-go/pkg/tensorflow/core/debug";
